@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'ETSegmentedView', :exclusive => true do
+  pod "ETSegmentedView", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "ETSegmentedView", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
