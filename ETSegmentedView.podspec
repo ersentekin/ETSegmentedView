@@ -10,19 +10,19 @@
 Pod::Spec.new do |s|
   s.name             = "ETSegmentedView"
   s.version          = "0.1.0"
-  s.summary          = "A short description of ETSegmentedView."
+  s.summary          = "Animated Segmented View powered by pop framework (facebook)"
   s.description      = <<-DESC
                        An optional longer description of ETSegmentedView
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/ETSegmentedView"
+  s.homepage         = "https://github.com/ersentekin/ETSegmentedView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Ersen Tekin" => "ersen.tekin@trendyol.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/ETSegmentedView.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Ersen Tekin" => "ersen.tekin@gmail.com" }
+  s.source           = { :git => "https://github.com/ersentekin/ETSegmentedView.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/ersentekin'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -34,5 +34,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+    s.dependency 'pop', '~> 1.0'
 end
