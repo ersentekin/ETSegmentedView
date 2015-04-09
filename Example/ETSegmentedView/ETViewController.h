@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ETSegmentedView/ETSegmentedView.h>
 
-@interface ETViewController : UIViewController
+@interface ETViewController : UIViewController <POPAnimationDelegate> {
+    
+    ETSegmentedView* view;
+}
+- (IBAction)btnAnimateAction:(id)sender;
 
 @end
