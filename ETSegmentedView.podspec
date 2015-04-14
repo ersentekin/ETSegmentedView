@@ -14,13 +14,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                         #ETSegmentedView
 
-                       ETSegmentedView is a lightweight and synchronous custom segmented view for iOS platform. It's an easy-to-setup and fully customizable component.
-
-                        [![Version](https://img.shields.io/cocoapods/v/ETSegmentedView.svg?style=flat)](http://cocoapods.org/pods/ETSegmentedView)
-                        [![License](https://img.shields.io/cocoapods/l/ETSegmentedView.svg?style=flat)](http://cocoapods.org/pods/ETSegmentedView)
-                        [![Platform](https://img.shields.io/cocoapods/p/ETSegmentedView.svg?style=flat)](http://cocoapods.org/pods/ETSegmentedView)
-
-                        ![](segmented_clip.gif)
+                        ETSegmentedView is a lightweight and synchronous custom segmented view for iOS platform. It's an easy-to-setup and fully customizable component.
 
                         ##Dependencies
                         ETSegmentedView has a cocoapod dependency to [POP](https://github.com/facebook/pop) animation framework by facebook.
