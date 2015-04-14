@@ -2,12 +2,14 @@
 
 ETSegmentedView is a lightweight and synchronous custom segmented view for iOS platform. It's an easy-to-setup and fully customizable component.
 
-[![CI Status](http://img.shields.io/travis/Ersen Tekin/ETSegmentedView.svg?style=flat)](https://travis-ci.org/Ersen Tekin/ETSegmentedView)
 [![Version](https://img.shields.io/cocoapods/v/ETSegmentedView.svg?style=flat)](http://cocoapods.org/pods/ETSegmentedView)
 [![License](https://img.shields.io/cocoapods/l/ETSegmentedView.svg?style=flat)](http://cocoapods.org/pods/ETSegmentedView)
 [![Platform](https://img.shields.io/cocoapods/p/ETSegmentedView.svg?style=flat)](http://cocoapods.org/pods/ETSegmentedView)
 
 ![](segmented_clip.gif)
+
+##Dependencies
+ETSegmentedView has a cocoapod dependency to [POP](https://github.com/facebook/pop) animation framework by facebook.
 
 ## Installation
 

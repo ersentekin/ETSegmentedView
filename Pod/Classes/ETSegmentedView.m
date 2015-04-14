@@ -193,7 +193,9 @@
     [_scrollViewContent setContentOffset:CGPointMake(indexOfButton * _scrollViewContent.frame.size.width, 0) animated:YES];
     isScrollingAnimationActive = YES;
     
-    [_delegate ETSegmentedViewButtonTappedWithIndex:indexOfButton];
+    if ([_delegate respondsToSelector:@selector(ETSegmentedViewButtonTappedWithIndex:)]) {
+        [_delegate ETSegmentedViewButtonTappedWithIndex:indexOfButton];
+    }
 }
 
 -(void)animateSelectionViewToIndex:(NSUInteger)index{
