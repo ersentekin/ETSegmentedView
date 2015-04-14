@@ -11,7 +11,7 @@ ETSegmentedView is a lightweight and synchronous custom segmented view for iOS p
 ##Dependencies
 ETSegmentedView has a cocoapod dependency to [POP](https://github.com/facebook/pop) animation framework by facebook.
 
-## Installation
+## Using [CocoaPods](http://cocoapods.org/)
 
 ETSegmentedView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -21,6 +21,11 @@ pod "ETSegmentedView"
 ```
 
 And run `pod install`
+
+## Manually from Github
+1. Download source files from [subdirectory](https://github.com/ersentekin/ETSegmentedView/tree/master/Pod/Classes)
+2. Add the source files to your Xcode project.
+3. Import the `ETSegmentedView.h` header file. 
 
 ## Usage
 
@@ -58,8 +63,8 @@ UIView* customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
 // if you are adding component to UIViewController
 [self.view addSubview:sv];
 ```
-
+###Cheers! 🍻
 
 ## License
 
-ETSegmentedView is available under the MIT license. See the LICENSE file for more info.
+ETSegmentedView is available under the MIT license. See the [LICENSE file](https://github.com/ersentekin/ETSegmentedView/blob/master/LICENSE) for more info.
