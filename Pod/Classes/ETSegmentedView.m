@@ -48,13 +48,12 @@
     NSLog(@"NO");
     lastContentX = 0;
     
-    [self.layer setBorderWidth:1.0f];
-    [self.layer setBorderColor:[UIColor blackColor].CGColor];
-    [self.layer setCornerRadius:3.0];
-    
     CGRect rectViewButtons = CGRectMake(0, 0, self.frame.size.width, kButtonsViewHeight);
     _viewButtons = [[UIView alloc] initWithFrame:rectViewButtons];
     [_viewButtons setBackgroundColor:_nonSelectionColor];
+    [_viewButtons.layer setBorderColor:[UIColor colorWithWhite:0.8 alpha:1].CGColor];
+    [_viewButtons.layer setCornerRadius:4.0f];
+    [_viewButtons.layer setBorderWidth:1.0f];
     _viewButtons.clipsToBounds = YES;
     [self addSubview:_viewButtons];
     
@@ -125,6 +124,7 @@
         [btnTitle addTarget:self action:@selector(btnTapped:) forControlEvents:UIControlEventTouchUpInside];
         
         UILabel* lblTitle = [[UILabel alloc] initWithFrame:rectBtnTitle];
+        [lblTitle setFont:[UIFont fontWithName:@"HelveticaNeue" size:14.0f]];
         [lblTitle setTextAlignment:NSTextAlignmentCenter];
         [lblTitle setText:[_titles objectAtIndex:i]];
         
@@ -164,8 +164,8 @@
         
         UIView* content = [_contents objectAtIndex:i];
         CGRect rectContent = content.frame;
-        rectContent.origin.x = _scrollViewContent.frame.size.width / 2 - rectContent.size.width / 2;
-        rectContent.origin.y = 40;
+        rectContent.origin.x = (i * _scrollViewContent.frame.size.width) + (_scrollViewContent.frame.size.width / 2 - rectContent.size.width / 2);
+        [content setFrame:rectContent];
         [_scrollViewContent addSubview:content];
         
     }
@@ -177,29 +177,26 @@
 }
 
 -(void)btnTapped:(UIButton*)sender {
+    
     NSUInteger indexOfButton = [_arrayTitleButtons indexOfObject:sender];
     
+    if (indexOfButton == _currentIndex) {
+        return;
+    }
     
-//    NSLog(@"animation count : %lu", (unsigned long)_viewSelection.pop_animationKeys.count);
     if (_viewSelection.pop_animationKeys.count > 0) {
         [_viewSelection pop_removeAllAnimations];
     }
     
     [self animateSelectionViewToIndex:indexOfButton];
     
-    
     [_scrollViewContent setContentOffset:CGPointMake(indexOfButton * _scrollViewContent.frame.size.width, 0) animated:YES];
     isScrollingAnimationActive = YES;
-    NSLog(@"YES");
     
     [_delegate ETSegmentedViewButtonTappedWithIndex:indexOfButton];
 }
 
 -(void)animateSelectionViewToIndex:(NSUInteger)index{
-    
-//    if (index == _currentIndex) {
-//        return;
-//    }
     
     float btnWidth = (selfFrame.size.width / _titles.count);
     float animateToLocation = (int)index * btnWidth;
