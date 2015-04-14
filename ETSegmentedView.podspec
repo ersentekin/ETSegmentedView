@@ -1,23 +1,14 @@
-#
-# Be sure to run `pod lib lint ETSegmentedView.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "ETSegmentedView"
   s.version          = "0.1.0"
-  s.summary          = "Synchronous & lightweight segmented view powered by pop framework (facebook)"
+  s.summary          = "Synchronous & lightweight segmented view -animated with POP!-"
   s.description      = <<-DESC
                         #ETSegmentedView
 
                         ETSegmentedView is a lightweight and synchronous custom segmented view for iOS platform. It's an easy-to-setup and fully customizable component.
 
                         ##Dependencies
-                        ETSegmentedView has a cocoapod dependency to [POP](https://github.com/facebook/pop) animation framework by facebook.
+                        ETSegmentedView depends on the [POP](https://github.com/facebook/pop) animation framework by facebook.
                        DESC
   s.homepage         = "https://github.com/ersentekin/ETSegmentedView"
   s.screenshots     = "http://i.imgur.com/EbJ4hEg.png", "http://i.imgur.com/BTl5msf.png"
