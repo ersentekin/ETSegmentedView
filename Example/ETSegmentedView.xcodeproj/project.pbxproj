@@ -24,6 +24,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		627C5DF31B73952B001846F8 /* UserInterfaceExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C5DF21B73952B001846F8 /* UserInterfaceExampleViewController.m */; };
 		629465131ADC0D7E00AF986F /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 629465121ADC0D7E00AF986F /* photo1.jpg */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		627C5DF11B73952B001846F8 /* UserInterfaceExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInterfaceExampleViewController.h; sourceTree = "<group>"; };
+		627C5DF21B73952B001846F8 /* UserInterfaceExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInterfaceExampleViewController.m; sourceTree = "<group>"; };
 		629465121ADC0D7E00AF986F /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.jpg; sourceTree = "<group>"; };
 		8CC96294F50020ADCA8EA0C8 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A719B5EFA49AACB75FB1E75B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				6003F5A6195388D20070C39A /* ETViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				627C5DF11B73952B001846F8 /* UserInterfaceExampleViewController.h */,
+				627C5DF21B73952B001846F8 /* UserInterfaceExampleViewController.m */,
 			);
 			path = ETSegmentedView;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 			files = (
 				6003F59E195388D20070C39A /* ETAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ETViewController.m in Sources */,
+				627C5DF31B73952B001846F8 /* UserInterfaceExampleViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

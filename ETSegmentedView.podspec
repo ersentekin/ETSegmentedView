@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ETSegmentedView"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "Synchronous & lightweight segmented view -animated with POP!-"
   s.description      = <<-DESC
                         #ETSegmentedView
