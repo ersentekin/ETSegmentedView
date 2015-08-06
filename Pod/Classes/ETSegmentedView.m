@@ -25,9 +25,21 @@
 @synthesize scrollViewContent = _scrollViewContent;
 @synthesize contents = _contents;
 
+-(id)initWithCoder:(NSCoder *)aDecoder {
+    
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        
+        [self setup];
+    }
+    
+    return self;
+}
+
 -(instancetype)initWithFrame:(CGRect)frame {
     
-    if (self == [super initWithFrame:frame]) {
+    self = [super initWithFrame:frame];
+    if (self) {
         
         [self setup];
     }
@@ -45,7 +57,6 @@
     _buttonTabHeight = kButtonsViewHeight;
     _currentIndex = 0;
     isScrollingAnimationActive = NO;
-    NSLog(@"NO");
     lastContentX = 0;
     
     CGRect rectViewButtons = CGRectMake(0, 0, self.frame.size.width, kButtonsViewHeight);
@@ -57,19 +68,6 @@
     _viewButtons.clipsToBounds = YES;
     [self addSubview:_viewButtons];
     
-    [self refreshView];
-}
-
--(void)layoutSubviews {
-    
-    
-}
-
--(void)setTitles:(NSArray *)titles {
-    
-    _titles = [titles copy];
-    
-    [self refreshView];
 }
 
 -(void)setContents:(NSArray *)contents {
@@ -83,19 +81,16 @@
         [self createContentScrollView];
     }
     
-    [self refreshView];
 }
 
 -(void)setSelectionColor:(UIColor *)selectionColor {
     _selectionColor = selectionColor;
     [_selectionColor getRed:&selRed green:&selGreen blue:&selBlue alpha:&selAlpha];
-    [self refreshView];
 }
 
 -(void)setNonSelectionColor:(UIColor *)nonSelectionColor {
     _nonSelectionColor = nonSelectionColor;
     [_nonSelectionColor getRed:&nonRed green:&nonGreen blue:&nonBlue alpha:&nonAlpha];
-    [self refreshView];
 }
 
 -(void)createButtonBar {
@@ -243,13 +238,12 @@
 -(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     
     isScrollingAnimationActive = NO;
-    NSLog(@"NO");
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     if (!isScrollingAnimationActive) {
-        NSLog(@"DID SCROLL");
+        
         CGRect rectViewSelection = _viewSelection.frame;
         rectViewSelection.origin.x = scrollView.contentOffset.x / _titles.count;
         [_viewSelection setFrame:rectViewSelection];
@@ -313,11 +307,6 @@
         
         [lblNext setTextColor:[UIColor colorWithRed:nRed green:nGreen blue:nBlue alpha:1]];
     }
-    
-}
-
--(void)refreshView {
-    
     
 }
 
