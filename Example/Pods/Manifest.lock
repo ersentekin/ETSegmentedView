@@ -1,5 +1,5 @@
 PODS:
-  - ETSegmentedView (0.2.0):
+  - ETSegmentedView (0.2.1):
     - pop (~> 1.0.7)
   - Expecta (1.0.2)
   - pop (1.0.7)
@@ -8,6 +8,7 @@ PODS:
 DEPENDENCIES:
   - ETSegmentedView (from `../`)
   - Expecta
+  - pop (~> 1.0.7)
   - Specta
 
 EXTERNAL SOURCES:
@@ -15,7 +16,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ETSegmentedView: 721b4caffb6cdb32f86aacaf19f234d7decbab33
+  ETSegmentedView: 56e0acf1ba38fea5dcc04950bff18714ea3ca5f8
   Expecta: 54e8a3530add08f4f0208c111355eda7cde74a53
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   Specta: cf3e4188cf35375c3ee2cd03f8db8f1f4ef98234
