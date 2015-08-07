@@ -25,5 +25,5 @@ Pod::Spec.new do |s|
     'ETSegmentedView' => ['Pod/Assets/*.png']
   }
 
-  s.dependency 'pop', '~> 1.0'
+  s.dependency 'pop', '~> 1.0.7'
 end
