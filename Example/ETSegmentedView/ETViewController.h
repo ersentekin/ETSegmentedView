@@ -13,6 +13,5 @@
     
     ETSegmentedView* view;
 }
-- (IBAction)btnAnimateAction:(id)sender;
 
 @end
