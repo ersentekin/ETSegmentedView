@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "383768B7821882058FEF4E72"
+               BlueprintIdentifier = "C1FD0F936CFE3C0D909EE700"
                BuildableName = "libETSegmentedView.a"
                BlueprintName = "ETSegmentedView"
                ReferencedContainer = "container:Pods.xcodeproj">
