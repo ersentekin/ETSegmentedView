@@ -8,7 +8,7 @@ ETSegmentedView is a lightweight and synchronous custom segmented view for iOS p
 
 ![](segmented_clip.gif)
 
-##Dependencies
+## Dependencies
 ETSegmentedView depends on the [POP](https://github.com/facebook/pop) animation framework by facebook.
 
 ## Using [CocoaPods](http://cocoapods.org/)
@@ -33,7 +33,7 @@ To run the example project, clone the repo, and run  from the Example directory 
 
 Here's the sample code to add ETSegmentedView to your any UIViewController or UIView
 
-###1. Initialize and customize the view
+### 1. Initialize and customize the view
 ```objectivec
 ETSegmentedView* sv = [[ETSegmentedView alloc] 
 	initWithFrame:CGRectMake(10, 60, [[UIScreen mainScreen] bounds].size.width - 20, 260)];
@@ -41,12 +41,12 @@ sv.nonSelectionColor = [UIColor whiteColor];
 sv.selectionColor = [UIColor darkGrayColor];
 ```
 
-###2. Set titles
+### 2. Set titles
 ```objectivec
 [sv setTitles:@[@"Label", @"Image", @"WebView", @"Custom"]];
 ```
 
-###3. Set contents
+### 3. Set contents
 ```objectivec
 UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 70, 40)];
 
@@ -63,7 +63,7 @@ UIView* customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
 // if you are adding component to UIViewController
 [self.view addSubview:sv];
 ```
-###Cheers! 🍻
+### Cheers! 🍻
 
 ## License
 
